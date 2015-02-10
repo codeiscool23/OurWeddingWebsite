@@ -1,0 +1,374 @@
+/* chelsandbentietheknot.com chels and ben wedding website
+
+	=LAYOUT
+	=TYPE
+	=iPad
+	=iPhone	
+	
+	gray: #3c3c3c
+	green: #9bcc8a
+	
+----------------------------------------------------------------------*/
+@import "reset.css";
+@import "fonts.css";
+@import "fancybox-1.3.4.css";
+.clear { clear: both; }
+
+/* =LAYOUT
+----------------------------------------------------------------------*/
+html {
+	border-bottom: 10px solid #3f4141;
+}
+body {
+	background: url(../images/bg_white.jpg)  0 0;
+	border-top: 10px solid #3F4141;
+}
+section.wrap {
+	margin: 0 auto;
+	max-width: 900px;
+}
+header {
+	background: url(../images/bg_gray.jpg) 0 0;
+	padding: 120px 0 90px;
+}
+header span {
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+header img {
+	position: absolute;
+	left: 50%;
+	top: -55px;
+	margin-left: -117px;
+}
+header nav ul {
+	max-width: 924px;
+	height: 38px;
+	margin: 0 auto;
+	overflow: auto;
+	background: url(../images/nav_bg.png) no-repeat 50% 50%;
+	padding-top: 13px;
+}
+footer nav ul {
+	padding: 4px 0;
+	margin: 0;
+}
+footer nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #3F4141;
+}
+footer nav li {
+	display: inline;
+}
+#nav_our_story,
+#nav_the_wedding {
+	float: left;
+	margin-right: 25px;
+}
+#nav_photography,
+#nav_gift_registry{
+	float: right;
+	margin-left: 25px;
+}
+section#welcome {
+	border-top: 1px solid #cacac9;
+	padding: 40px 0;
+}
+section#welcome figure {
+	width: 34%;
+	float: left;
+}
+section#welcome figure img {
+	max-width: 100%;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+section#welcome figure img:hover {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+#message {
+	text-align: left;
+	width: 58%;
+	float: left;
+	padding-left: 3%;
+}
+section#our_story {
+	border-top: 1px solid #cacac9;
+	padding: 40px 30px;
+	background: url(../images/bg_gray.jpg) 0 0;
+}
+section#the_wedding {
+	overflow: auto;
+	border-top: 1px solid #cacac9;
+	padding: 40px 30px;
+}
+	#ceremony,
+	#wedding_party,
+	#accommadations {
+		float: left;
+		width: 280px;
+	}
+	#wedding_party {
+		padding: 0 30px;
+		background: url(../images/wavy_lines_dual.png) repeat-y 50% 0;
+	}
+section#photography {
+	border-top: 1px solid #cacac9;
+	padding: 40px 30px;
+	background: url(../images/bg_gray.jpg) 0 0;
+}
+section#gift_registry {
+	overflow: auto;
+	border-top: 1px solid #cacac9;
+	padding: 40px 30px;
+}
+        #amazon {
+    border-style:solid;
+}
+	
+section#gift_registry img{
+       position:relative;
+       top:30px;
+       right:5px;
+       border-bottom: 0px;
+	
+}
+footer {
+	border-top: 1px solid #cacac9;
+	padding: 30px 30px 40px;
+	background: url(../images/bg_gray.jpg) 0 0;
+}
+
+/* =TYPE
+----------------------------------------------------------------------*/
+body {
+	font-family: 'MuseoSlab300', Georgia, serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #3c3c3c;
+}
+footer {
+	font-size: 12px;
+}
+section, footer, header {
+	text-align: center;
+}
+section#welcome {
+	font-family: 'MuseoSlab300Italic', Georgia, serif;
+	overflow: auto;
+}
+::selection {
+	background: #9bcc8a;
+}
+::-moz-selection {
+	background: #9bcc8a;
+}
+h2 {
+	font-family: 'MuseoSans700', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+	margin-bottom: 26px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background: url(../images/heading_decoration.png) no-repeat 50% 50%;
+}
+h3 {
+	font-family: 'MuseoSlab700Italic', Georgia, serif;
+	font-size: 16px;
+        font-weight:bold;
+	line-height: 14px;
+	margin-bottom: 14px;
+}
+h4 {
+	font-family: 'MuseoSlab300Italic', Georgia, serif;
+	font-size: 14px;
+	line-height: 14px;
+	margin-bottom: 14px;
+}
+
+p, ul {
+	margin-bottom: 1.3em;
+}
+#wedding_party p, #wedding_party ul, .footnote {
+	font-size: 16px;
+	line-height: 18px;
+}
+#wedding_party .footnote {
+    font-weight:bold;
+    font-size: 16px;
+}
+
+p.intro {
+	margin-bottom: 30px;
+}
+strong {
+	font-family: 'MuseoSlab500', Georgia, serif;
+}
+em {
+	font-style: italic;
+}
+a {
+	font-family: 'MuseoSlab500', Georgia, serif;
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px dotted #000;
+	-moz-transition: color .3s linear;
+	-o-transition: color .3s linear;
+	-ms-transition: color .3s linear;
+	-webkit-transition: color .3s linear;
+	transition: color .3s linear;
+}
+a:hover {
+	color: #9bcc8a;
+}
+section#welcome a {
+	font-family: 'MuseoSlab500Italic', Georgia, serif;
+}
+header nav a,
+footer nav a {
+	font-family: 'MuseoSlab700Italic', Georgia, serif;
+	color: #3c3c3c;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+	border: 0;
+	padding: 2px 5px;
+	-moz-transition: background-color .3s linear;
+	-o-transition: background-color .3s linear;
+	-ms-transition: background-color .3s linear;
+	-webkit-transition: background-color .3s linear;
+	transition: background-color .3s linear;
+}
+footer nav a {
+	text-indent: 0;
+	color: #eaeaea;
+	font-family: 'MuseoSlab500Italic', Georgia, serif;
+	padding: 0 12px;
+}
+header nav a:hover {
+	background-color: #9bcc8a;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #3c3c3c;
+}
+#photography a,
+#fancybox-outer a {
+	border: 0;
+}
+a#btn_top {
+	display: block;
+	color: #eaeaea;
+	font-family: 'MuseoSlab300Italic';
+	text-transform: uppercase;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	background-color: #3c3c3c;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-moz-transition: background-color .3s linear;
+	-o-transition: background-color .3s linear;
+	-ms-transition: background-color .3s linear;
+	-webkit-transition: background-color .3s linear;
+	transition: background-color .3s linear;
+}
+a#btn_top:hover {
+	background-color: #9bcc8a;
+	color: #3c3c3c;
+}
+
+
+/* =iPad
+----------------------------------------------------------------------*/
+@media only screen and (max-width: 899px) { 
+	#ceremony,
+	#wedding_party,
+	#accommadations {
+		float: none;
+		width: 100%;
+		padding: 0 0 30px;
+		background: none;
+	}
+}
+
+
+/* =iPhone
+----------------------------------------------------------------------*/
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 500px)  {
+	
+	body {
+		font-size: 15px;
+		line-height: 24px;
+	}
+	
+	header {
+		padding: 50px 0 20px;
+	}
+	header span {
+		margin: 0 auto;
+		position: relative;
+		display: block;
+	}
+	header img {
+		position: static;
+		margin: 0 auto;
+	}
+	header nav ul {
+		background: none;
+		height: auto;
+		width: 90%;
+	}
+	header nav li {
+		float: none !important;
+		margin: 0 10px !important;
+		display: inline;
+	}
+	section#welcome {
+		border-top: 1px solid #cacac9;
+		padding: 40px 0 20px;
+	}
+	section#welcome figure {
+		width: auto;
+		float: none;
+	}
+	section#welcome figure img {
+		max-width: 80%;
+		-webkit-transition: all 0.5s ease-in-out;
+	    -moz-transition: all 0.5s ease-in-out;
+	    -o-transition: all 0.5s ease-in-out;
+	}
+	section#welcome figure img:hover {
+		-webkit-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		transform: rotate(-2deg);
+	}
+	#message {
+		text-align: center;
+		width: auto;
+		float: none;
+		padding: 20px 30px 0;
+	}
+	section#our_story,
+	section#photography,
+	section#gift_registry {
+		padding-bottom: 0;
+	}
+	section#the_wedding {
+		padding-bottom: 0;
+	}
+}
