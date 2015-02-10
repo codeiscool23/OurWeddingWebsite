@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-	// video
-	$("#the_video").fitVids();
 	
 	// smooth scrolling navigation
 	$('a[href*=#]').bind('click', function(){
